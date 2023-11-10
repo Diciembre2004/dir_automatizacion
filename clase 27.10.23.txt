@@ -1,0 +1,102 @@
+-----------------***__ACTUADORES__***----------------
+
+ADC 
+
+Vref
+
+amplificador al ADC 
+
+atenuador al ADC (uso un divisor desistivo) imperancia
+
+¿en funcion de cantidad de bits, que error -de medicion- puedo tener?
+voltio de incertidumbre (puede variar minimo uno y no me afectara)
+por eso necesito aprovechar todo el rango 
+
+SAMPLING
+es del tiempo. sampliar *al menos* dos veces la frecuencia. funcion del requerimiento
+
+Alisiasing
+ver algo que no esta
+
+------------------------------------------
+que va a tomar:
+TIPO DE CONTROLADORES, ADC Y ACTUADORES
+------------------------------------------
+
+En el mundo real casi todo tiene una respuesta continua analogica de rango
+
+¿que pasa si quiero modificar algo de lo que transforme a digital?
+controlador PWM: por ejemplo con un motor convencional. variar sentido de girar
+
+para regular su velocidad con la cantidad de tension (12 v muy rapido. 5v lento. 1v quemo)
+Se usa una señal PWM (pulse width modulation) en la cual parto de esta señal.
+Si alimento el motor en este pulso del 50% uso el tope de frecuencia
+Uno del 80% empieza a girar continuo
+frecuencia (F=1/T) es inverso al periodo, frec es siempre lo mismo lo que vario es 
+la porcion de la frecuencia es del tiempo donde estoy arriba o abajo
+
+controlador SERVO: angulo
+cuando el pulso varia, el procesador del motor sabe en que angulo debe estar. (50% -> 90º)
+
+
+ACTUADOR NEUMATICO
+es un piston. atraccion completa pq no tiene mucho control
+*Ventajas* de un sistema neuromatico: 
+La fuerza maxima esta limita (en funcion del tamaño y presion del aire). No importan las perdidas (pq es aire).
+Facil de acoplar y desacoplar partes (los camiones y trenes los usan).
+*Desventajas* de un sistema neuromatico: 
+Hace falta un compresor para moverlo.
+Cuando safa, es peligroso porque tiene mucha presion (una explosion)
+
+ACTUADOR HIDRAULICO
+Parecido al neumatico, usa un liquido parecido al aceite. Dicipa energia
+*Ventajas*: puede hacer muchisima fuerza. Mas regulable. 
+Si se corta una manguera, como el liquido no se comprime no tiene efecto y no almacena energia.
+*Desventajas*: el sistema tiene que estar purgado. tiene que tener una bomba hidraulica
+el liquido no puede tener aire (hay que purgarlo) en circuito ni perdidas. 
+
+
+
+3 NOVIEMBRE PRUEBA
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+ 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

@@ -1,0 +1,33 @@
+-----------Tipos de respuestas------------
+
+Sistema no realimentado: si hay algo inesperado, se rompe.
+
+Sistema realimentado: conssite en realimentacion, posibilidad de corregir algo.
+
+Histeresis: cuanto espacio dejo ates de cambiar de modo. Cuanto puede variar la entrada antes de actuar.
+lazo abierto / lazo cerrado
+
+para hacer que el ciclo sea mas largo, mas histeresis.
+
+-------------Tipos de controles-----------------------
+
+Control Tipo Proporcion: Enfuncion de que tan lejos estoy de mi objetivo, actuo con mas o menos magnitud.
+*Desventajas* nunca llega (error estacionario). Puede generar un sistema oscilante e histeresis.
+
+Control Tipo Integral: Area bajo la curva (mas chico △X para representar area)
+Si tardo mucho, la respuesta se va incrementando hasta llegar a 0. Proximo a lo acumulado del error.
+
+Control Tipo Derivada: Reacciona a la velocidad del cambio "si dejo de cambiar, deja de actuar"
+
+
+
+------------------ADC-------------------
+ADC decodifica analogica con un ADC de X bit a digital.
+
+ADC 1 bit: *ventajas* simple y rapido. *desventaja* no representa bien
+
+ADC 2 bits: Mas resolucion, mas bits, mas calidad pero mas costo de procesamiento. Usa mas comparadores y mas tiempo comparandolo.
+Precision = tiempo .Mas precision lleva mas tiempo de procesamiento. 
+
+ADC de 16 bits es resolucion alta. 12 bits es usado comunmente. Arduino tiene 10bits
+  
